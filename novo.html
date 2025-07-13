@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <style>
+            body{
+                background-color:black;
+            }
+        </style>
+         <meta charset="UTF-8"> <!-- Codificação de Caracteres -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> <!-- Responsividade -->
+        <meta name="keywords" content="pessoasfeias, pessoas, muitofeias, pessoashorriveis"> <!-- Palavras-chave para SEO -->
+        <meta name="description" content="pessoas muito feias"> <!-- Descrição para SEO -->
+        <meta name="author" content="victorsaib"> <!-- Autor da página -->
+        <meta name="language" content="pt-br"> <!-- Linguagem da página -->
+        <meta name="robots" content="index, follow"> <!-- Instruções para indexação de busca -->
+
+        <!-- Meta Tags de Open Graph (Para redes sociais como Facebook, LinkedIn) -->
+        <meta property="og:title" content="pessoas horriveis"> <!-- Título quando compartilhado -->
+        <meta property="og:description" content="pessoas horriveis"> <!-- Descrição no Open Graph -->
+         <!-- Imagem quando compartilhada -->
+        <meta property="og:url" content="https://www.exemplo.com/pagina"> <!-- URL da página -->
+
+        <!-- Meta Tags de Twitter Card (Para o Twitter) -->
+        <meta name="twitter:card" content="summary_large_image"> <!-- Tipo do cartão no Twitter -->
+        <meta name="twitter:image" content=""> <!-- Imagem para Twitter -->
+        <meta name="twitter:title" content="pessoas horriveis"> <!-- Título no Twitter -->
+        <meta name="twitter:description" content="pessoashorriveis"> <!-- Descrição no Twitter -->
+
+        <!-- Outras Meta Tags -->
+        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"> <!-- Controla o cache da página -->
+        <meta name="date" content="2025-07-13T00:00:00Z"> <!-- Data de modificação da página -->
+        <title>Pessoas horriveis</title>
+    </head>
+    <body>
+        <div id="ok"></div>
+
+        <script>
+            for (let i = 0; i < 100; i++) {
+                // Criar o link
+                const link = document.createElement('a');
+                link.href = "https://victorxx.github.io/reflexao01git/";
+                link.target = '_blank';
+
+                // Criar a imagem
+                const imagem = document.createElement('img');
+                imagem.src = `ii_${i}.jpg`; // A URL da imagem
+
+                // Definir um estilo básico para as imagens
+                imagem.style.maxWidth = '200px'; // Limitar o tamanho da imagem
+                imagem.style.margin = '5px';
+
+                // Se a imagem não for encontrada, escondê-la
+                imagem.onerror = function() {
+                    imagem.style.display = 'none';
+                };
+
+                // Adicionar a imagem ao link
+                link.appendChild(imagem);
+
+                // Adicionar o link ao contêiner
+                document.getElementById('ok').appendChild(link);
+            }
+        </script>
+    </body>
+</html>
